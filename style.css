@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navContainer{
+    background: rgb(0,0,128);
+    background: linear-gradient(159deg, rgba(0,0,128,1) 0%, rgba(0,191,255,1) 100%);
+    background: transparent;
+    /* backdrop-filter:blur(100px) ; */
+    overflow:auto;
+    /* border: solid black 1px; */
+    
+}
+body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(WhatsApp\ Image\ 2025-02-04\ at\ 16.48.43.jpeg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* .size{
+    height: 40px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+} */
+
+
+#baba{
+    padding-top: 14px;
+    font-size: 40px;
+    color: antiquewhite;
+    font-style: oblique;
+    text-align: center;
+}
+.menuButton{
+    padding-top: 14px;
+    color: antiquewhite; 
+    width: 100px;
+
+}
+.search-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    width: 600px; 
+    padding-left: 25px;
+    font-size: 16px;
+    border: none; 
+    border-radius: 50px; 
+    outline: none; 
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+/* Hover effects */
+.search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+.todayWeather{
+    display: block;
+    width: 20rem;
+    height: 15rem;
+    padding :6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem auto;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(20px);
+    border: solid black 2px;
+}
+.todayWeather:hover {
+    backdrop-filter: blur(10px);
+    transform: scale(1.05);
+}
+.date,.CurrentHum{
+    color: rgba(13, 13, 12,0.7);
+}
+.day{
+    color: rgba(13, 13, 12,0.4);
+}
+.temp{
+    font-size: 5rem;
+    font-weight:500;
+}
+.currentWeather{
+    font-size: 2rem;
+}
+.weekDays{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.DayForecast{
+    padding:2em;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: solid black 1px;
+}
+.DayForecast:hover {
+    backdrop-filter: blur(10px);
+    transform: scale(1.05);
+}
+.date1,.Hum{
+    color: rgba(13, 13, 12,0.7);
+}
+.temp1{
+    font-size: 2rem;
+}
+.todayWeather{
+    color:rgb(255, 132, 0);
+}
+.stick{
+    font-size: 2rem;
+}
+.stick1{
+    font-size: 2rem;
+}
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+    .todayWeather {
+        width: 90%;
+        padding: 2em;
+    }
+
+    .weekDays {
+        flex-direction: column;
+    }
+
+    .DayForecast {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #baba {
+        font-size: 24px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .weekDays {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .DayForecast {
+        flex-basis: calc(33.333% - 1rem);
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 1025px) {
+    .todayWeather {
+        width: 30rem;
+    }
+}
+.day1{
+    color: rgba(13, 13, 12,0.4);
+}
